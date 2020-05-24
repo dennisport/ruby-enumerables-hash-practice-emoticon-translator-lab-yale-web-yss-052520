@@ -4,16 +4,7 @@ require 'pry'
 
 def load_library(path)
  data = YAML.load(path)
- emoticon_hash = {"get_meaning" => {}, "get_emoticon" => {}}
- data.each do |english_word, emoticons|
-   binding.pry
-  emoticon_hash["get_meaning"][emoticon[1]] = english_word
-  emoticon_hash["get_emoticon"][emoticons[0]] = emoticons
-  binding.pry
-end
-emoticon_hash
-binding.pry
-end
+ 
 
 
 def get_english_meaning(path, emoticon)
