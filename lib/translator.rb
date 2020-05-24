@@ -9,7 +9,6 @@ def load_library(path)
     hash[key] = { :english => val[0], :japanese => val[1] }
   end 
   hash
-  binding.pry
 end
 
 
@@ -17,11 +16,7 @@ def get_english_meaning(path, emoticon)
   # code goes here
   library = load_library(path)
   emoticon = library.keys.find do |key|
- if !emoticon
-   "Sorry, that emoticon was not found"
-  else 
-    emoticon
-  end
+    binding.pry
 end
   
 end
