@@ -8,7 +8,6 @@ def load_library(path)
  data.each do |english_word, emoticons|
    binding.pry
   emoticon_hash["get_meaning"][emoticon[1]] = english_word
-  binding.pry
   emoticon_hash["get_emoticon"][emoticons[0]] = emoticons
   binding.pry
 end
