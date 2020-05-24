@@ -9,6 +9,7 @@ def load_library(path)
     hash[key] = { :english => val[0], :japanese => val[1] }
   end 
   hash
+  binding.pry
 end
 
 
