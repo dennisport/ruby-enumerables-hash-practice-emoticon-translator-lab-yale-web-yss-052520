@@ -4,7 +4,12 @@ require 'pry'
 
 def load_library(path)
  data = YAML.load(path)
- 
+  hash = {}
+  data.each do |key,val| 
+    hash[key] = { :english => val[0], :japanese => val[1] }
+  end 
+  new 
+end
 
 
 def get_english_meaning(path, emoticon)
