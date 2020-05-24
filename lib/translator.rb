@@ -3,12 +3,12 @@ require 'yaml'
 require 'pry'
 
 def load_library(path)
- data = YAML.load(path)
+ data = YAML.load_file(path)
   hash = {}
   data.each do |key,val| 
     hash[key] = { :english => val[0], :japanese => val[1] }
   end 
-  new 
+  hash
 end
 
 
